@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+
+  joomla:
+    image: joomla
+    restart: always
+    ports:
+      - 3000:80
+    environment:
+      JOOMLA_DB_HOST: db
+      JOOMLA_DB_USER: joomla
+      JOOMLA_DB_PASSWORD: joomla
+      JOOMLA_DB_NAME: joomla
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: joomla
+      MYSQL_USER: joomla
+      MYSQL_PASSWORD: joomla
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
