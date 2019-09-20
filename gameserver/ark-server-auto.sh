@@ -5,4 +5,4 @@ dpkg --add-architecture i386; apt update; apt install mailutils postfix curl wge
 
 cd /home/arkserver
 su arkserver -c "wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh arkserver"
-su arkserver -c "./arkserver install"
+su arkserver -c "./arkserver ai"

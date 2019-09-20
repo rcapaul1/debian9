@@ -6,4 +6,4 @@ dpkg --add-architecture i386; apt update; apt install mailutils postfix curl wge
 
 cd /home/cod4server
 su cod4server -c "wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh cod4server"
-su cod4server -c "./cod4server install"
+su cod4server -c "./cod4server ai"

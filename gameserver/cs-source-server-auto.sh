@@ -6,4 +6,4 @@ dpkg --add-architecture i386; apt update; apt install mailutils postfix curl wge
 
 cd /home/cssserver
 su cssserver -c "wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh cssserver"
-su cssserver -c "./cssserver install"
+su cssserver -c "./cssserver ai"
